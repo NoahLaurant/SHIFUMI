@@ -64,28 +64,57 @@ function comparaison (util,ordi){
 
         //sinon si utilisateur utilise pierre et ordi feuille alors utilisateur perd
         else if(util==="pierre" && ordi==="feuille"){
-            alert("utilisateur perd");
+            return("utilisateur perd");
         }
 
             //sinon si utilisateur utilise feuille et ordi ciseaux alors utilisateur perd
             else if(util==="feuille" && ordi==="ciseaux"){
-            alert("utilisateur perd");
+            return("utilisateur perd");
         }
                 //sinon si utilisateur utilise feuille et ordi pierrre alors utilisateur gagne
                else if(util==="feuille" && ordi==="pierre"){
-            alert("utilisateur gagne");
+            return("utilisateur gagne");
         }
                     //sinon si utilisateur utilise ciseaux et ordi feuille alors utilisateur gagne
                        else if(util==="ciseaux" && ordi==="feuille"){
-            alert("utilisateur gagne");
+            return("utilisateur gagne");
         }
                         //sinon si utilisateur utilise ciseaux et ordi pierre alors utilisateur perd
                              else if(util===ciseaux && ordi==="pierre"){
-            alert("utilisateur perd");
+            return("utilisateur perd");
         }
         else{
-            alert("match nul");
+            return("match nul");
         }
 }
 
+
+
+
+
+/*
+
+//correction
+//affichage
+//role : afficher le resultat
+//parametre : le winner
+//return : rien car elle affiche
+
+function afficheResultat(choixOrdi,choixJoueur,winner){
+    alert(`l'ordinateur a choisis ${choixOrdi} tu as choisis ${choixJoueur} donc : ${winner}`)
+}
+
+
 //scénario
+//role : lancer le scénario
+//parametre :non
+//return :non
+
+function jouer(){
+   let choixUtili = utilisateur();
+    let nbrAleaPioche =conversionOrdi(choisir);
+    let winner =comparaison(util,ordi);
+afficheResultat(choixOrdi,choixJoueur,winner);
+}
+
+*/
