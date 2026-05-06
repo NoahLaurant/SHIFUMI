@@ -55,3 +55,37 @@ function conversionOrdi(choisir){
 //role : comparer les deux choix 
 //parametre : les deux choix
 //return : retoune le vainqueur
+
+function comparaison (util,ordi){
+    //si utilisateur utilise pierre et ordi utilise ciseaux alors utilisateur gagne
+    if(util==="pierre" && ordi==="ciseaux"){
+        alert("utilisateur gagne");
+    }
+
+        //sinon si utilisateur utilise pierre et ordi feuille alors utilisateur perd
+        else if(util==="pierre" && ordi==="feuille"){
+            alert("utilisateur perd");
+        }
+
+            //sinon si utilisateur utilise feuille et ordi ciseaux alors utilisateur perd
+            else if(util==="feuille" && ordi==="ciseaux"){
+            alert("utilisateur perd");
+        }
+                //sinon si utilisateur utilise feuille et ordi pierrre alors utilisateur gagne
+               else if(util==="feuille" && ordi==="pierre"){
+            alert("utilisateur gagne");
+        }
+                    //sinon si utilisateur utilise ciseaux et ordi feuille alors utilisateur gagne
+                       else if(util==="ciseaux" && ordi==="feuille"){
+            alert("utilisateur gagne");
+        }
+                        //sinon si utilisateur utilise ciseaux et ordi pierre alors utilisateur perd
+                             else if(util===ciseaux && ordi==="pierre"){
+            alert("utilisateur perd");
+        }
+        else{
+            alert("match nul");
+        }
+}
+
+//scénario
